@@ -15,6 +15,7 @@ namespace DataAccess.Concrete.EntityFramework
 
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Editor> Editors { get; set; }
+        public DbSet<Admin> Admin { get; set; }
 
     }
 }
