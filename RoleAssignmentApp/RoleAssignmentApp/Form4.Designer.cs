@@ -67,13 +67,13 @@
             this.emailDataGridViewTextBoxColumn,
             this.phoneNumberDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.customersBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(44, 46);
+            this.dataGridView1.Location = new System.Drawing.Point(37, 57);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(708, 268);
+            this.dataGridView1.Size = new System.Drawing.Size(709, 268);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
             // 
@@ -182,7 +182,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(47, 394);
+            this.button1.Location = new System.Drawing.Point(121, 394);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 32);
             this.button1.TabIndex = 8;
@@ -201,7 +201,7 @@
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(238, 394);
+            this.updateBtn.Location = new System.Drawing.Point(347, 394);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(116, 32);
             this.updateBtn.TabIndex = 9;
@@ -211,7 +211,7 @@
             // 
             // deleteBtn
             // 
-            this.deleteBtn.Location = new System.Drawing.Point(434, 394);
+            this.deleteBtn.Location = new System.Drawing.Point(577, 394);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(107, 32);
             this.deleteBtn.TabIndex = 10;
@@ -222,7 +222,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(125, 23);
+            this.linkLabel1.Location = new System.Drawing.Point(633, 23);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(113, 17);
             this.linkLabel1.TabIndex = 11;

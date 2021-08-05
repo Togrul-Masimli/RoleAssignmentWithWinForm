@@ -32,6 +32,8 @@ namespace RoleAssignmentApp
             updateBtn.Enabled = false;
             deleteBtn.Enabled = false;
 
+            
+
             if (currentEdtior.CanCreate == true)
             {
                 button1.Enabled = true;
@@ -43,6 +45,10 @@ namespace RoleAssignmentApp
             if (currentEdtior.CanDelete == true)
             {
                 deleteBtn.Enabled = true;
+            }
+            if (currentEdtior.CanRead == false)
+            {
+                dataGridView1.Enabled = false;
             }
 
             label1.Text = $"Hi, {currentEdtior.EditorName}!";

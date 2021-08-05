@@ -10,7 +10,7 @@ using RoleAssignmentApp;
 namespace RoleAssignmentApp.Migrations
 {
     [DbContext(typeof(RoleAssignmentAppContext))]
-    [Migration("20210804194635_Initial")]
+    [Migration("20210805144715_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

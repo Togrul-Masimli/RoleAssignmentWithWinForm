@@ -43,40 +43,7 @@ namespace RoleAssignmentApp
             }
         }
 
-        private void addEditorBrn_Click(object sender, EventArgs e)
-        {
-            using (RoleAssignmentAppContext context = new RoleAssignmentAppContext())
-            {
-                var editor = new Editor { EditorName = editorNameBox.Text, Password = editorPasswordBox.Text };
-                if (createCheck.Checked == true)
-                {
-                    editor.CanCreate = true;
-                }
-                if (readCheck.Checked == true)
-                {
-                    editor.CanRead = true;
-                }
-                if (updateCheck.Checked == true)
-                {
-                    editor.CanUpdate = true;
-                }
-                if (deleteCheck.Checked == true)
-                {
-                    editor.CanDelete = true;
-                }
-                context.Editors.Add(editor);
-                context.SaveChanges();
-                MessageBox.Show("New Editor Added");
-            }
-
-            editorNameBox.Text = " ";
-            editorPasswordBox.Text = " ";
-            createCheck.Checked = false;
-            readCheck.Checked = false;
-            updateCheck.Checked = false;
-            deleteCheck.Checked = false;
-
-        }
+        
 
         private void showEditorBtn_Click(object sender, EventArgs e)
         {

@@ -53,6 +53,7 @@
             this.createBtn = new System.Windows.Forms.Button();
             this.updateBtn = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.editorsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roleAssignmentAppDBDataSet)).BeginInit();
@@ -61,7 +62,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 72);
+            this.label1.Location = new System.Drawing.Point(43, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 17);
             this.label1.TabIndex = 0;
@@ -82,7 +83,7 @@
             this.canUpdateDataGridViewCheckBoxColumn,
             this.canDeleteDataGridViewCheckBoxColumn});
             this.dataGridView1.DataSource = this.editorsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 102);
+            this.dataGridView1.Location = new System.Drawing.Point(21, 92);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -172,7 +173,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(44, 40);
+            this.linkLabel1.Location = new System.Drawing.Point(42, 29);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(39, 17);
             this.linkLabel1.TabIndex = 2;
@@ -183,7 +184,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 405);
+            this.label2.Location = new System.Drawing.Point(32, 395);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 17);
             this.label2.TabIndex = 3;
@@ -191,14 +192,14 @@
             // 
             // editorNameBox
             // 
-            this.editorNameBox.Location = new System.Drawing.Point(101, 405);
+            this.editorNameBox.Location = new System.Drawing.Point(100, 395);
             this.editorNameBox.Name = "editorNameBox";
             this.editorNameBox.Size = new System.Drawing.Size(121, 22);
             this.editorNameBox.TabIndex = 4;
             // 
             // editorPasswordBox
             // 
-            this.editorPasswordBox.Location = new System.Drawing.Point(331, 402);
+            this.editorPasswordBox.Location = new System.Drawing.Point(330, 392);
             this.editorPasswordBox.Name = "editorPasswordBox";
             this.editorPasswordBox.Size = new System.Drawing.Size(121, 22);
             this.editorPasswordBox.TabIndex = 6;
@@ -206,7 +207,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(242, 405);
+            this.label3.Location = new System.Drawing.Point(241, 395);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 17);
             this.label3.TabIndex = 5;
@@ -215,7 +216,7 @@
             // createCheck
             // 
             this.createCheck.AutoSize = true;
-            this.createCheck.Location = new System.Drawing.Point(491, 402);
+            this.createCheck.Location = new System.Drawing.Point(490, 392);
             this.createCheck.Name = "createCheck";
             this.createCheck.Size = new System.Drawing.Size(101, 21);
             this.createCheck.TabIndex = 7;
@@ -225,7 +226,7 @@
             // readCheck
             // 
             this.readCheck.AutoSize = true;
-            this.readCheck.Location = new System.Drawing.Point(595, 401);
+            this.readCheck.Location = new System.Drawing.Point(594, 391);
             this.readCheck.Name = "readCheck";
             this.readCheck.Size = new System.Drawing.Size(93, 21);
             this.readCheck.TabIndex = 8;
@@ -235,7 +236,7 @@
             // updateCheck
             // 
             this.updateCheck.AutoSize = true;
-            this.updateCheck.Location = new System.Drawing.Point(699, 401);
+            this.updateCheck.Location = new System.Drawing.Point(698, 391);
             this.updateCheck.Name = "updateCheck";
             this.updateCheck.Size = new System.Drawing.Size(105, 21);
             this.updateCheck.TabIndex = 9;
@@ -245,7 +246,7 @@
             // deleteCheck
             // 
             this.deleteCheck.AutoSize = true;
-            this.deleteCheck.Location = new System.Drawing.Point(803, 401);
+            this.deleteCheck.Location = new System.Drawing.Point(802, 391);
             this.deleteCheck.Name = "deleteCheck";
             this.deleteCheck.Size = new System.Drawing.Size(100, 21);
             this.deleteCheck.TabIndex = 10;
@@ -254,7 +255,7 @@
             // 
             // createBtn
             // 
-            this.createBtn.Location = new System.Drawing.Point(268, 445);
+            this.createBtn.Location = new System.Drawing.Point(267, 435);
             this.createBtn.Name = "createBtn";
             this.createBtn.Size = new System.Drawing.Size(90, 39);
             this.createBtn.TabIndex = 11;
@@ -264,7 +265,7 @@
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(446, 445);
+            this.updateBtn.Location = new System.Drawing.Point(445, 435);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(85, 39);
             this.updateBtn.TabIndex = 12;
@@ -274,7 +275,7 @@
             // 
             // deleteBtn
             // 
-            this.deleteBtn.Location = new System.Drawing.Point(628, 445);
+            this.deleteBtn.Location = new System.Drawing.Point(627, 435);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(83, 39);
             this.deleteBtn.TabIndex = 13;
@@ -282,11 +283,22 @@
             this.deleteBtn.UseVisualStyleBackColor = true;
             this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Blue;
+            this.label4.Location = new System.Drawing.Point(28, 29);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(16, 17);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "<";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(975, 510);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.createBtn);
@@ -339,5 +351,6 @@
         private System.Windows.Forms.Button createBtn;
         private System.Windows.Forms.Button updateBtn;
         private System.Windows.Forms.Button deleteBtn;
+        private System.Windows.Forms.Label label4;
     }
 }

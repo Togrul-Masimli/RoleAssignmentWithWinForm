@@ -13,6 +13,8 @@ namespace RoleAssignmentApp
     public partial class Form1 : Form
     {
         public Editor editor { get; set; }
+        Admin admin;
+
 
         public Form1()
         {
@@ -22,14 +24,24 @@ namespace RoleAssignmentApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            using (RoleAssignmentAppContext context = new RoleAssignmentAppContext())
+            {
+                if (!context.Admins.Any(x => x.Id == 1))
+                {
+                    Admin admin = new Admin { Username = "admin", Password = "admin123", Email = "admin@example.com" };
+                    context.Admins.Add(admin);
+                    context.SaveChanges();
+                }
+            }
         }
+
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
            
             using (RoleAssignmentAppContext context = new RoleAssignmentAppContext())
             {
+
                 if (context.Admins.Any(x => x.Username == emailBox.Text && x.Password == passwordBox.Text))
                 {
                     this.Hide();
